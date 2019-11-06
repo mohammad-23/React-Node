@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import d3 from 'react-d3';
 
 import Payments from './Payments';
 
@@ -27,7 +28,7 @@ class Header extends Component {
             <nav>
                 <div className="nav-wrapper">
                     <Link to={this.props.auth ? '/surveys': '/'}
-                        className="left brand-logo">Emaily</Link>
+                    className="left brand-logo">Emaily</Link>
                     <ul className="right">
                        {this.renderContent()}
                     </ul>
